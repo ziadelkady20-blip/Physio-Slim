@@ -845,13 +845,7 @@ const [activeTab, setActiveTab] = useState<MembershipCategory>("gym")
 </div>
                        </div>
                     {trainer.bio && <p className="text-[13px] text-gray-400 leading-relaxed mb-4">{trainer.bio}</p>}
-                    {trainer.certifications && trainer.certifications.length > 0 && (
-                      <div className="flex flex-wrap gap-1.5 mb-5">
-                        {trainer.certifications.slice(0, 3).map((cert: string) => (
-                          <span key={cert} className="text-[10px] tracking-[0.5px] border border-[rgba(212,175,55,0.15)] text-gray-400 px-2 py-1 font-montserrat">{cert}</span>
-                        ))}
-                      </div>
-                    )}
+                    
                     <a href={s.whatsapp} target="_blank" onClick={() => trackEvent('whatsappClicks').catch(() => {})}
                       className="w-full flex items-center justify-center gap-2 border border-[rgba(212,175,55,0.2)] text-gold font-montserrat font-bold text-[11px] tracking-[2px] uppercase py-2.5 hover:border-gold hover:bg-[rgba(212,175,55,0.06)] transition-all">
                       Book Session <Icon name="arrow" size={12} stroke="currentColor" />
