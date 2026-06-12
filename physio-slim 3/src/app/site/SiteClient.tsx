@@ -843,6 +843,7 @@ const [activeTab, setActiveTab] = useState<MembershipCategory>("gym")
 <div className="text-[12px] text-gray-400 font-montserrat font-bold">
   {trainer.experience}
 </div>
+                       </div>
                     {trainer.bio && <p className="text-[13px] text-gray-400 leading-relaxed mb-4">{trainer.bio}</p>}
                     {trainer.certifications && trainer.certifications.length > 0 && (
                       <div className="flex flex-wrap gap-1.5 mb-5">
